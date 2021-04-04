@@ -3,12 +3,12 @@ from pywebio.output import *
 
 import pickle
 import numpy as np
-import sklearn
-from sklearn.preprocessing import StandardScaler
+#import sklearn
+#from sklearn.preprocessing import StandardScaler
 model = pickle.load(open('regression_rf.pkl', 'rb'))
 
 
-standard_to = StandardScaler()
+#standard_to = StandardScaler()
 
 def predict():
     Year = input("Enter the Model Year：", type=NUMBER)
